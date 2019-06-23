@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+function alphabetSort(message){
+  var s=message.toLowerCase();
+  var m='';
+  var arr=s.split("");
+  for(var i=0;i<arr.length;i++){
+	for(var j=arr.length-1;j>i;j--){
+		if(arr[j].charCodeAt()<arr[j-1].charCodeAt()){
+			m=arr[j];
+			arr[j]=arr[j-1];
+			arr[j-1]=m;
+		}
+	}
+  }
+  console.log( arr.join(''));
+  // wirte your code here
+}
+alphabetSort('hello'); // should return 'ehllo'
+</script>
+</head>
+<body>
+</body>
+</html>

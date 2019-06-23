@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+// 完成下面程序，将`name`变量中的字母全部转为为大写，输出：`'HELLO'`。
+var name = 'hello';
+console.log(name.toUpperCase());
+
+
+// 完成下面程序，将sentence变量中的所有单词首字母变为大写，输出：'Good Afternoon, Mr Mike.'。
+var sentence = 'good afternoon, mr mike.';
+var sentence1='';
+var words = sentence.split(" ");
+for(var i=0;i<words.length;i++){
+    words[i]=words[i].substring(0,1).toUpperCase()+words[i].substring(1);
+    if(i!=words.length-1)
+	sentence1=sentence1+words[i]+' ';
+	else
+	sentence1=sentence1+words[i];
+}
+console.log(sentence1);
+
+
+// 完成下面程序，将money变量中的金额提取出来，输出：20。
+var money = '￥20';
+console.log(money.replace('￥',''));
+
+</script>
+</head>
+<body>
+</body>
+</html>
